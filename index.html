@@ -1,139 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Studebaker Tile & Home Renovation</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #222;
-        }
-
-        header {
-            background-color: #1f2933;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        header h1 {
-            margin-bottom: 10px;
-        }
-
-        nav {
-            background-color: #111820;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .service {
-            flex: 1;
-            min-width: 220px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #b45309;
-            color: white;
-            padding: 12px 22px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #1f2933;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Studebaker Tile & Home Renovation, LLC provides bathroom renovations, tile installation, and mold or fire restoration services throughout the New River Valley." />
+  <title>Studebaker Tile & Home Renovation, LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
-<header>
-    <h1>Studebaker Tile & Home Renovation</h1>
-    <p>Quality craftsmanship for your home renovation projects</p>
-    <a class="button" href="#contact">Request a Free Estimate</a>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Studebaker Tile & Home Renovation provides dependable home
-        improvement and remodeling services. We take pride in quality
-        workmanship, clear communication, and treating every home with care.
-    </p>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-
-    <div class="services">
-        <div class="service">
-            <h3>Tile Installation</h3>
-            <p>Professional tile installation for floors, backsplashes, showers, and more.</p>
-        </div>
-
-        <div class="service">
-            <h3>Bathroom Remodeling</h3>
-            <p>Bathroom upgrades, custom showers, flooring, vanities, and complete renovations.</p>
-        </div>
-
-        <div class="service">
-            <h3>Home Renovations</h3>
-            <p>Drywall, flooring, decks, fencing, kitchens, and other home improvement projects.</p>
-        </div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Studebaker Tile and Home Renovation home">
+        <img src="assets/logo.png" alt="Studebaker Tile & Home Renovation, LLC logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="tel:+15403910141">Call (540) 391-0141</a>
     </div>
-</section>
+  </header>
 
-<section id="contact">
-    <h2>Request a Free Estimate</h2>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Licensed & Insured • Serving the New River Valley</p>
+        <h1>Quality craftsmanship for the home you deserve.</h1>
+        <p class="hero-copy">Bathroom renovations, custom tile work, and disaster restoration from mold or fire—delivered with dependable service from Matt and Robb.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Request a Free Estimate</a>
+          <a class="button button-secondary" href="tel:+15403910141">Call Now</a>
+        </div>
+        <div class="hero-badges" aria-label="Business highlights">
+          <span>15+ Years Serving the NRV</span>
+          <span>Free Estimates</span>
+          <span>Licensed & Insured</span>
+        </div>
+      </div>
+    </section>
 
-    <p>Contact us to discuss your renovation project.</p>
+    <section class="intro-strip">
+      <div class="container intro-grid">
+        <div>
+          <span class="section-kicker">Dependability You Can Count On</span>
+          <h2>Renovation work done carefully, clearly, and correctly.</h2>
+        </div>
+        <p>Studebaker Tile & Home Renovation, LLC serves Christiansburg, Blacksburg, Radford, and communities throughout the New River Valley. We focus on craftsmanship, honest communication, and a finished result built to last.</p>
+      </div>
+    </section>
 
-    <p>
-        <strong>Phone:</strong> Add your phone number<br>
-        <strong>Email:</strong> Add your email address<br>
-        <strong>Service area:</strong> Add the areas you serve
-    </p>
-</section>
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker">Our Services</span>
+          <h2>From targeted upgrades to complete renovations</h2>
+          <p>These are the core services currently featured. The list can be expanded whenever you are ready.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card featured">
+            <div class="service-number">01</div>
+            <h3>Bathroom Renovations</h3>
+            <p>Complete bathroom updates, custom shower systems, vanities, flooring, fixtures, and finishing work.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-number">02</div>
+            <h3>Tile Installation</h3>
+            <p>Professional tile for showers, floors, backsplashes, walls, niches, and other custom applications.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-number">03</div>
+            <h3>Mold & Fire Restoration</h3>
+            <p>Repair and renovation services following mold damage, smoke damage, fire damage, or related demolition.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-number">04</div>
+            <h3>Home Renovation</h3>
+            <p>Interior improvements, flooring, drywall, kitchens, decks, fencing, and other residential renovation projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Studebaker Tile & Home Renovation, LLC</p>
-</footer>
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-image placeholder-photo">
+          <div>
+            <span>Future Project Photo</span>
+            <small>Add a completed bathroom, shower, or tile project here later.</small>
+          </div>
+        </div>
+        <div class="about-copy">
+          <span class="section-kicker">Meet the Owners</span>
+          <h2>Local experience. Personal accountability.</h2>
+          <p>Matt and Robb bring more than 15 years of experience serving homeowners in the New River Valley. As a locally operated company, they remain directly involved in the work and committed to clear expectations from estimate through completion.</p>
+          <ul class="check-list">
+            <li>Owner-led communication</li>
+            <li>Detailed, craftsmanship-focused work</li>
+            <li>Respectful treatment of your home</li>
+            <li>Free project estimates</li>
+          </ul>
+          <a class="text-link" href="#contact">Tell us about your project →</a>
+        </div>
+      </div>
+    </section>
 
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Project Gallery</span>
+          <h2>Your work will be the centerpiece.</h2>
+          <p>You can add photos later without rebuilding the website. Each placeholder below can be replaced with one project image.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item large placeholder-photo"><span>Bathroom Renovation</span></div>
+          <div class="gallery-item placeholder-photo"><span>Custom Shower</span></div>
+          <div class="gallery-item placeholder-photo"><span>Tile Installation</span></div>
+          <div class="gallery-item placeholder-photo"><span>Deck or Fence</span></div>
+          <div class="gallery-item placeholder-photo"><span>Before & After</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews-section">
+      <div class="container">
+        <div class="section-heading centered light">
+          <span class="section-kicker">Customer Reviews</span>
+          <h2>Built on quality and trust</h2>
+          <p>Once you select the reviews you want featured, they can be added here as individual testimonials.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Customer review placeholder. Add a short Google review that highlights craftsmanship, communication, or reliability.”</p>
+            <strong>Google Customer</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Customer review placeholder. Add another strong testimonial when you are ready.”</p>
+            <strong>Google Customer</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Customer review placeholder. This section can feature three to six reviews.”</p>
+            <strong>Google Customer</strong>
+          </article>
+        </div>
+        <div class="review-action">
+          <a class="button button-light" href="https://www.google.com/search?q=Studebaker+Tile+%26+Home+Renovation%2C+LLC" target="_blank" rel="noopener">View Google Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-area-section">
+      <div class="container service-area-grid">
+        <div>
+          <span class="section-kicker">Service Area</span>
+          <h2>Proudly serving the New River Valley</h2>
+          <p>Based in the New River Valley and serving Christiansburg, Blacksburg, Radford, and surrounding communities.</p>
+          <div class="city-tags">
+            <span>Christiansburg</span><span>Blacksburg</span><span>Radford</span><span>New River Valley</span>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe title="Map of the New River Valley service area" src="https://www.google.com/maps?q=Christiansburg%2C%20Virginia&z=10&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="section-kicker">Free Estimates</span>
+          <h2>Let's talk about your project.</h2>
+          <p>Tell us what you are planning, where the project is located, and the best way to reach you. Submitting the form opens a prepared email to Matt.</p>
+          <div class="contact-details">
+            <a href="tel:+15403910141"><strong>Phone</strong><span>(540) 391-0141</span></a>
+            <a href="mailto:matt64studebaker@gmail.com"><strong>Email</strong><span>matt64studebaker@gmail.com</span></a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61585582882983" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/studebaker_home_renovation/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.google.com/search?q=Studebaker+Tile+%26+Home+Renovation%2C+LLC" target="_blank" rel="noopener">Google Business</a>
+          </div>
+        </div>
+
+        <form id="estimate-form" class="estimate-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Project location
+            <input type="text" name="location" placeholder="City or community" />
+          </label>
+          <label class="full-width">
+            Project type
+            <select name="project">
+              <option>Bathroom renovation</option>
+              <option>Tile installation</option>
+              <option>Mold or fire restoration</option>
+              <option>Other home renovation</option>
+            </select>
+          </label>
+          <label class="full-width">
+            Project details
+            <textarea name="details" rows="5" required placeholder="Describe the work you are considering..."></textarea>
+          </label>
+          <button class="button button-primary full-width" type="submit">Prepare Estimate Request</button>
+          <p class="form-note">This version uses your email app and requires no paid form subscription.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Studebaker Tile & Home Renovation, LLC" />
+        <p>Quality Craftsmanship • Dependability You Can Count On</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:+15403910141">(540) 391-0141</a>
+        <a href="mailto:matt64studebaker@gmail.com">matt64studebaker@gmail.com</a>
+      </div>
+      <div>
+        <strong>Owners</strong>
+        <span>Matt & Robb</span>
+        <span>Licensed & Insured</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Studebaker Tile & Home Renovation, LLC</span>
+      <span>Serving the New River Valley</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
